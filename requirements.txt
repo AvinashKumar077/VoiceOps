@@ -21,3 +21,4 @@ sentence-transformers
 sentence-transformers
 sentence-transformers
 sentence-transformers
+hdbscan

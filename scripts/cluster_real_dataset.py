@@ -33,12 +33,14 @@ clusters = cluster_service.cluster(
 print(f"Clusters: {len(clusters)}")
 
 for cluster in clusters[:10]:
-
     print()
 
-    print("=" * 60)
-    print(cluster.cluster_id)
-    print(cluster.size)
+print("=" * 80)
+print(f"Cluster: {cluster.cluster_id}")
+print(f"Size: {cluster.size}")
+print(f"Quality: {cluster.average_similarity:.3f}")
 
-    for review in cluster.representative_reviews:
-        print(review[:120])
+print("\nRepresentative Reviews:\n")
+
+for review in cluster.representative_reviews:
+    print(f"• {review}")
