@@ -1,5 +1,5 @@
 from app.clustering.models import ReviewCluster
-from app.insights.insight_service import InsightService
+from app.insights.batch_insight_service import BatchInsightService
 
 cluster = ReviewCluster(
     cluster_id=56,
@@ -14,8 +14,9 @@ cluster = ReviewCluster(
     ]
 )
 
-service = InsightService()
+service = BatchInsightService()
 
-insight = service.analyze(cluster)
+insights = service.analyze([cluster])
 
-print(insight.model_dump_json(indent=2))
+for insight in insights:
+    print(insight.model_dump_json(indent=2))

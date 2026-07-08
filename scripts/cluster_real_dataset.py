@@ -2,7 +2,7 @@ import time
 
 from app.clustering.cluster_service import ClusterService
 from app.embeddings.embedding_service import EmbeddingService
-from app.insights.insight_service import InsightService
+from app.insights.batch_insight_service import BatchInsightService
 from app.parsers.csv_parser import CsvParser
 from app.preprocessing.preprocessing_pipeline import PreprocessingPipeline
 
@@ -49,14 +49,14 @@ for review in cluster.representative_reviews:
 # Only send the largest, most impactful clusters to the LLM
 top_clusters = clusters[:20]
 
-insight_service = InsightService()
+insight_service = BatchInsightService()
 
-for cluster in top_clusters:
-    insight = insight_service.analyze(cluster)
+insights = insight_service.analyze(top_clusters)
 
+for insight in insights:
     print()
     print("=" * 80)
-    print(f"Cluster: {cluster.cluster_id} (size={cluster.size})")
+    print(f"Cluster: {insight.cluster_id} (size={insight.affected_reviews})")
     print(f"Title: {insight.title}")
     print(f"Summary: {insight.summary}")
     print(f"Sentiment: {insight.sentiment}")
