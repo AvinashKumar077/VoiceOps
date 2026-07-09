@@ -1,9 +1,10 @@
-from app.analysis.models import AnalysisReport
 from app.analytics.statistics_service import StatisticsService
 from app.clustering.cluster_service import ClusterService
 from app.embeddings.embedding_service import EmbeddingService
 from app.insights.insight_pipeline import InsightPipeline
 from app.models.conversation import Conversation
+from app.report.models import ProductAnalysisReport
+from app.report.report_pipeline import ReportPipeline
 
 
 class AnalysisPipeline:
@@ -14,11 +15,12 @@ class AnalysisPipeline:
         self.embedding_service = EmbeddingService()
         self.cluster_service = ClusterService()
         self.insight_pipeline = InsightPipeline()
+        self.report_pipeline = ReportPipeline()
 
     def analyze(
             self,
             conversations: list[Conversation],
-    ) -> AnalysisReport:
+    ) -> ProductAnalysisReport:
 
         statistics = self.statistics_service.generate(
             conversations
@@ -42,7 +44,7 @@ class AnalysisPipeline:
             clusters
         )
 
-        return AnalysisReport(
+        return self.report_pipeline.build(
             statistics=statistics,
             insights=insights,
         )

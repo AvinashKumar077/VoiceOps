@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File
-from services.upload_service import UploadService
+from app.services.upload_service import UploadService
 
 router = APIRouter()
 

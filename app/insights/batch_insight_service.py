@@ -1,6 +1,5 @@
-import json
-
 from app.ai.factory import LLMFactory
+from app.ai.json_utils import parse_json
 from app.ai.models import LLMRequest
 from app.clustering.models import ReviewCluster
 from app.insights.batch_prompt_builder import BatchPromptBuilder
@@ -28,9 +27,7 @@ class BatchInsightService:
             )
         )
 
-        raw_insights = json.loads(
-            self._strip_code_fence(response.content)
-        )
+        raw_insights = parse_json(response.content)
 
         clusters_by_id = {
             cluster.cluster_id: cluster
@@ -54,13 +51,3 @@ class BatchInsightService:
             insights.append(insight)
 
         return insights
-
-    @staticmethod
-    def _strip_code_fence(content: str) -> str:
-        content = content.strip()
-
-        if content.startswith("```"):
-            content = content.strip("`")
-            content = content.removeprefix("json").strip()
-
-        return content
