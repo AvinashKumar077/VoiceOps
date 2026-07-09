@@ -1,6 +1,7 @@
 from app.ai.factory import LLMFactory
 from app.ai.json_utils import parse_json
 from app.ai.models import LLMRequest
+from app.analytics.models import DatasetStatistics
 from app.insights.models import ClusterInsight
 from app.report.executive_summary_prompt import ExecutiveSummaryPromptBuilder
 from app.report.models import ExecutiveSummary
@@ -15,6 +16,7 @@ class ExecutiveSummaryService:
     def generate(
             self,
             insights: list[ClusterInsight],
+            statistics: DatasetStatistics,
     ) -> ExecutiveSummary:
         if not insights:
             return ExecutiveSummary(
@@ -25,7 +27,7 @@ class ExecutiveSummaryService:
                 summary="Not enough data was gathered to produce an executive summary.",
             )
 
-        prompt = self.builder.build(insights)
+        prompt = self.builder.build(insights, statistics)
 
         response = self.provider.generate(
             LLMRequest(

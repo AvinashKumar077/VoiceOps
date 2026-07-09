@@ -20,7 +20,8 @@ class ReportPipeline:
         categorized = self.categorizer.categorize(insights)
 
         executive_summary = self.executive_summary_service.generate(
-            insights
+            insights,
+            statistics,
         )
 
         return ProductAnalysisReport(
