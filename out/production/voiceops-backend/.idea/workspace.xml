@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f61c1ffb-fad2-4c18-b4bc-d709305a4387" name="Changes" comment="ADDED: static insights">
+      <change afterPath="$PROJECT_DIR$/app/clustering/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/clustering/cluster_mapper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/clustering/cluster_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/clustering/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/embeddings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/embeddings/embedding_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/embeddings/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/embeddings/vector_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "BharatFinanceMS"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AvinashKumar077/VoiceOps.git",
+    "accountId": "b60a569c-c6c6-492c-9f5a-87659703b00d"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000003235273485" />
+      <entry key="S10" value="1.001570558989135" />
+      <entry key="S30" value="1.4623575405894016" />
+      <entry key="S60" value="2.922287413818733" />
+      <entry key="M2" value="4.966623158759731" />
+      <entry key="M5" value="8.040909621893572" />
+      <entry key="M10" value="11.926963538315102" />
+      <entry key="M15" value="15.384817937112015" />
+      <entry key="M30" value="23.473806653948134" />
+      <entry key="H1" value="32.46328660941912" />
+      <entry key="H2" value="39.70226727528874" />
+      <entry key="H4" value="44.38739880638248" />
+      <entry key="D1" value="48.991724302443366" />
+      <entry key="W1" value="49.85405457691805" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9794202975869268" />
+      <entry key="MS500" value="0.9958497530944581" />
+      <entry key="S2" value="0.998960819551523" />
+      <entry key="S5" value="0.999584521549239" />
+      <entry key="S10" value="1.0013622983861827" />
+      <entry key="S30" value="1.4622549378271514" />
+      <entry key="S60" value="2.9221793921535735" />
+      <entry key="M2" value="4.966308439453535" />
+      <entry key="M5" value="8.03932794886097" />
+      <entry key="M10" value="11.924951131355185" />
+      <entry key="M15" value="15.38293761034274" />
+      <entry key="M30" value="23.472386455903045" />
+      <entry key="H1" value="32.46234930317806" />
+      <entry key="H2" value="39.701712183750594" />
+      <entry key="H4" value="44.38709389542977" />
+      <entry key="D1" value="48.991669053285115" />
+      <entry key="W1" value="49.85404656629247" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3GAc1SxvmncpG9AEax362nOeOxJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.test_conversation_mapper.test_map_google_play_review.executor": "Run",
+    "Python tests.Python tests for tests.test_embedding_service.test_embedding.executor": "Run",
+    "Python tests.Python tests for tests.test_header_detector.test_detect_google_play_headers.executor": "Run",
+    "Python tests.Python tests for tests.test_intelligence_service.test_analyze_keywords.executor": "Run",
+    "Python tests.Python tests for tests.test_ngram_extractor.test_bigram.executor": "Run",
+    "Python tests.Python tests for tests.test_ngram_extractor.test_empty.executor": "Run",
+    "Python tests.Python tests for tests.test_ngram_extractor.test_short_sentence.executor": "Run",
+    "Python tests.Python tests for tests.test_ngram_extractor.test_trigram.executor": "Run",
+    "Python tests.Python tests for tests.test_preprocessing_pipeline.test_pipeline.executor": "Run",
+    "Python tests.Python tests for tests.test_review_validator.test_empty_review.executor": "Run",
+    "Python tests.Python tests for tests.test_review_validator.test_none_review.executor": "Run",
+    "Python tests.Python tests for tests.test_review_validator.test_single_character.executor": "Run",
+    "Python tests.Python tests for tests.test_review_validator.test_spaces_review.executor": "Run",
+    "Python tests.Python tests for tests.test_review_validator.test_valid_review.executor": "Run",
+    "Python tests.Python tests for tests.test_statistics_service.test_generate_statistics.executor": "Run",
+    "Python tests.Python tests for tests.test_text_cleaner.test_keep_emoji.executor": "Run",
+    "Python tests.Python tests for tests.test_text_cleaner.test_lowercase.executor": "Run",
+    "Python tests.Python tests for tests.test_text_cleaner.test_multiple_spaces.executor": "Run",
+    "Python tests.Python tests for tests.test_text_cleaner.test_new_lines.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "ak/milstone-data-sanitiy",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/avinashkumar/PersonalProject/voiceops-backend/sample-data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample-data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_cluster_mapper.test_mapper">
+    <configuration name="Python tests for tests.test_cluster_mapper.test_mapper" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="voiceops-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_cluster_mapper.test_mapper&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_embedding_service.test_embedding" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="voiceops-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_embedding_service.test_embedding&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_intelligence_service.test_analyze_keywords" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="voiceops-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_intelligence_service.test_analyze_keywords&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_ngram_extractor.test_empty" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="voiceops-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ngram_extractor.test_empty&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_ngram_extractor.test_short_sentence" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="voiceops-backend" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ngram_extractor.test_short_sentence&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.test_cluster_mapper.test_mapper" />
+        <item itemvalue="Python tests.Python tests for tests.test_embedding_service.test_embedding" />
+        <item itemvalue="Python tests.Python tests for tests.test_intelligence_service.test_analyze_keywords" />
+        <item itemvalue="Python tests.Python tests for tests.test_ngram_extractor.test_short_sentence" />
+        <item itemvalue="Python tests.Python tests for tests.test_ngram_extractor.test_empty" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f61c1ffb-fad2-4c18-b4bc-d709305a4387" name="Changes" comment="" />
+      <created>1783417636188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783417636188</updated>
+    </task>
+    <task id="LOCAL-00001" summary="ADDED: initial setup">
+      <option name="closed" value="true" />
+      <created>1783417975945</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783417975945</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ADDED: initial setup">
+      <option name="closed" value="true" />
+      <created>1783418678499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783418678499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ADDED: milestone 1 done , initial parsing and upload flow">
+      <option name="closed" value="true" />
+      <created>1783420061675</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783420061675</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ADDED: data extraction done">
+      <option name="closed" value="true" />
+      <created>1783421625368</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783421625368</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ADDED: preprocessing done">
+      <option name="closed" value="true" />
+      <created>1783422667555</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783422667555</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ADDED: statistics added">
+      <option name="closed" value="true" />
+      <created>1783423030971</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783423030971</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ADDED: static insights">
+      <option name="closed" value="true" />
+      <created>1783424672388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783424672388</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ADDED: initial setup" />
+    <MESSAGE value="ADDED: milestone 1 done , initial parsing and upload flow" />
+    <MESSAGE value="ADDED: data extraction done" />
+    <MESSAGE value="ADDED: preprocessing done" />
+    <MESSAGE value="ADDED: statistics added" />
+    <MESSAGE value="ADDED: static insights" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED: static insights" />
+  </component>
+</project>
